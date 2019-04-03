@@ -1,5 +1,7 @@
-def reverse_each_word(num)
-  num.each do|x|
-  
-  puts x.reverse
+def reverse_each_word string
+	boop = string.split(" ")
+	yay = boop.collect do |word|
+		word.reverse
+	end
+	yay.join(" ")
 end
